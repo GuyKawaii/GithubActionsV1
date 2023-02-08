@@ -10,10 +10,20 @@ jobs:
         run: echo "Hello World"
       - name: multiline script
         run: |
+          echo node
           node -v
+          echo npm
           npm -v
       - name: python
         run: |
           import platform
           print(platform.processor())
         shell: python
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory PowerShell
+        run: Get-location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
