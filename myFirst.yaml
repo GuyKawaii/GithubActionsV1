@@ -1,0 +1,44 @@
+name: Ali
+age: 28
+address: kfc
+
+active: true
+noTact: null
+
+key:
+  key1: value1
+  key2: value2
+
+someJson: { key: value,
+            key2: value2 }
+
+jobArray:
+  - job1
+  - job2
+  - job3
+
+jpobArrayObject:
+  - job1: value1
+    job2: value2
+  - { job1: value1,
+      job2: value2 }
+
+objectsArray:
+  - key: value
+  - key2: value2
+
+objectsArray2:
+  - key: value
+    key2: value2
+  - key1: value
+    key2: value2
+
+longText1: >
+  where is it? here it is
+  this is the second line
+  this is the third line
+
+longText2: |
+  where is it? here it is
+  this is the second line
+  this is the third line
