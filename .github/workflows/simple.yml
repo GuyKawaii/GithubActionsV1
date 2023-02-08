@@ -1,6 +1,6 @@
 name: my first action
 
-on: [push]
+on: [ push ]
 
 jobs:
   run-shell-command:
@@ -12,3 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
